@@ -8,3 +8,4 @@ class NoteForm(forms.ModelForm):
             'title': forms.TextInput(attrs={'class': 'form-control'}),
             'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 6}),
         }
+# NoteForm 
