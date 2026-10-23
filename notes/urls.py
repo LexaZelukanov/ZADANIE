@@ -6,3 +6,4 @@ urlpatterns = [
     path('<int:pk>/', views.note_detail, name='note_detail'),
     path('<int:pk>/delete/', views.note_delete, name='note_delete'),
 ]
+# list url 
