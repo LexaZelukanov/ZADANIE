@@ -22,3 +22,4 @@ def note_delete(request, pk):
         note.delete()
         return redirect('note_list')
     return render(request, 'notes/delete.html', {'note': note})
+# list view 
