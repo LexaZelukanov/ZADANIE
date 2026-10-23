@@ -1,0 +1,8 @@
+{% extends "notes/base.html" %}
+{% block content %}
+<h1>{{ note.title }}</h1>
+<p class="text-muted small">{{ note.created_at|date:"d.m.Y H:i" }}</p>
+<hr><p style="white-space: pre-wrap;">{{ note.text }}</p><hr>
+<a href="{% url 'note_list' %}" class="btn btn-secondary">Назад</a>
+<a href="{% url 'note_delete' note.pk %}" class="btn btn-danger">Удалить</a>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "notes/base.html" %}
+{% block content %}
+<h1>Удалить заметку?</h1>
+<p>Удалить «{{ note.title }}»?</p>
+<form method="post">{% csrf_token %}
+<button class="btn btn-danger">Да, удалить</button>
+<a href="{% url 'note_list' %}" class="btn btn-secondary">Отмена</a></form>
+{% endblock %}
